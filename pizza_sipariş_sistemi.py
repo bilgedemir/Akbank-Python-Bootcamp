@@ -193,7 +193,7 @@ def calculate_total_price(product):
 
 def select_product():
 # Menüden pizza seçim yapma
- #pizza = None
+ pizza = None
  print("\nLütfen bir pizza tabanı seçiniz: ")
  print("1: Klasik")
  print("2: Margarita")
@@ -216,7 +216,7 @@ def select_product():
 
 
 # Kullanıcıdan Sos seçimi
-#while True:
+
 def select_sos():
   sos_type = input("\nLütfen sosu seçin: ")
   if sos_type == "11":
@@ -247,8 +247,6 @@ def main():
     # ürün seçimi
     product = select_product();
     sos = select_sos()
-    # miktar seçimi
-    #quantity = select_quantity(product)
     # ödeme bilgileri
     tc, card_number, card_password, card_expiry, card_cvv = get_payment_info()
     # toplam fiyat hesaplama
